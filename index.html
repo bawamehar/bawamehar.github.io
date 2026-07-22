@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mehar Singh Bawa — ML / AI Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">MSB</a>
+    <nav class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="Mehar_Singh_Bawa_AI_Engineer.pdf" class="nav-resume" target="_blank" rel="noopener noreferrer">Resume ↓</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-toggle-label">Dark</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <img src="images/profile.jpg" alt="Mehar Singh Bawa" class="hero-photo">
+      <p class="eyebrow">// ml / ai engineer &nbsp;·&nbsp; data scientist</p>
+      <h1 class="hero-title">Mehar Singh Bawa</h1>
+      <p class="hero-sub">
+        I design and ship agentic AI systems, from multi-agent orchestration pipelines to
+        production-ready ML models, drawing on 6 years across cloud data engineering and
+        applied machine learning.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="projects">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p class="section-note">Systems that turn data and AI into decisions.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+      <article class="card" data-fig="FIG. 01">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/bawamehar/Agentic-AI-Resume-Screening-System/main/dashboard.png" alt="Agentic AI Resume Screening System dashboard">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">Agentic AI · Multi-Agent Orchestration</div>
+          <h3>Agentic AI Resume Screening System</h3>
+          <p>A four-agent pipeline that screens resumes against job descriptions, with a
+            dedicated Critic Agent running a bounded reflection loop to catch and correct
+            weak evaluations before final output.</p>
+          <ul class="card-tech">
+            <li>LangGraph</li><li>LangChain</li><li>LangSmith</li><li>OpenAI API</li><li>Pydantic</li><li>Reflection Pattern</li><li>Streamlit UI</li><li>Python</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/bawamehar/Agentic-AI-Resume-Screening-System" class="card-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card" data-fig="FIG. 02">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/bawamehar/Financial-Sentiment-Analysis-using-FinBERT/main/finbert.png" alt="Financial Sentiment Analysis using FinBERT">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">NLP · Fine-Tuning</div>
+          <h3>Financial Sentiment Analysis using FinBERT</h3>
+          <p>Fine-tuned BERT for financial sentiment classification on Financial PhraseBank,
+            trained end-to-end on a single T4 GPU.</p>
+          <ul class="card-tech">
+            <li>PyTorch</li><li>HuggingFace</li><li>Text Classification</li><li>Transformer Fine-Tuning</li><li>NLP</li><li>96.5% F1</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/bawamehar/Financial-Sentiment-Analysis-using-FinBERT" class="card-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card" data-fig="FIG. 03">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/bawamehar/Retail-Customer-Analytics-and-Sales-Forecasting/main/dashboard.PNG" alt="Retail Customer Analytics and Sales Forecasting dashboard">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">Analytics · Forecasting</div>
+          <h3>Retail Customer Analytics and Sales Forecasting</h3>
+          <p>Customer segmentation and demand forecasting built on RFM analysis, Auto-ARIMA
+            time-series models, and Apriori-based market basket analysis.</p>
+          <ul class="card-tech">
+            <li>RFM Segmentation</li><li>Auto-ARIMA</li><li>Apriori</li><li>Association Rule Mining</li><li>FP-Growth</li><li>Recommendation System</li><li>Python</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/bawamehar/Retail-Customer-Analytics-and-Sales-Forecasting" class="card-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="card" data-fig="FIG. 04">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/bawamehar/Diabetes-Prediction-Project/main/diabetes-pred.png" alt="Diabetes Prediction Project">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">ML Systems · MLOps</div>
+          <h3>Diabetes Prediction Project</h3>
+          <p>A production-ready prediction service with a served model, experiment tracking,
+            and a relational store for inference logging.</p>
+          <ul class="card-tech">
+            <li>FastAPI</li><li>MLflow</li><li>PostgreSQL</li><li>Boosting Algorithms</li><li>Drift Detection</li><li>MLOps</li><li>Python</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/bawamehar/Diabetes-Prediction-Project" class="card-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="card" data-fig="FIG. 05">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/bawamehar/Airline-Passenger-Satisfaction-Prediction/main/airline.png" alt="Airline Passenger Satisfaction Prediction">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">Classification · Predictive Modeling</div>
+          <h3>Airline Passenger Satisfaction Prediction</h3>
+          <p>A classification model predicting passenger satisfaction from flight and
+            service-quality features, with model comparison and evaluation.</p>
+          <ul class="card-tech">
+            <li>Python</li><li>pandas</li><li>scikit-learn</li><li>Classification</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/bawamehar/Airline-Passenger-Satisfaction-Prediction" class="card-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="card" data-fig="FIG. 06">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/bawamehar/Telco-Customer-Churn-Model-Comparison/main/churn-pred.png" alt="Telco Customer Churn Model Comparison">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">Classification · Model Comparison</div>
+          <h3>Telco Customer Churn Model Comparison</h3>
+          <p>A benchmark of multiple classification algorithms for predicting customer
+            churn, compared across accuracy, precision, and recall.</p>
+          <ul class="card-tech">
+            <li>Python</li><li>scikit-learn</li><li>EDA</li><li>Model Benchmarking</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/bawamehar/Telco-Customer-Churn-Model-Comparison" class="card-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 7 -->
+      <article class="card" data-fig="FIG. 07">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/bawamehar/Electric-Vehicle-Data-Analysis-using-Power-BI/main/ev-data-analysis.PNG" alt="Electric Vehicle Data Analysis using Power BI">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">BI · Data Visualization</div>
+          <h3>Electric Vehicle Data Analysis using Power BI</h3>
+          <p>An interactive Power BI dashboard exploring EV adoption trends, registrations,
+            and market patterns.</p>
+          <ul class="card-tech">
+            <li>Power BI</li><li>DAX</li><li>Data Visualization</li><li>Sales Performance</li><li>EDA</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/bawamehar/Electric-Vehicle-Data-Analysis-using-Power-BI" class="card-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 8 -->
+      <article class="card" data-fig="FIG. 08">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/bawamehar/Linear-Regression-Analysis-in-Python/main/linear-reg.png" alt="Linear Regression Analysis in Python">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">Statistics · Regression</div>
+          <h3>Linear Regression Analysis in Python</h3>
+          <p>A from-the-ground-up walkthrough of linear regression, covering assumptions,
+            diagnostics, and model evaluation.</p>
+          <ul class="card-tech">
+            <li>Python</li><li>statsmodels</li><li>Regression</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/bawamehar/Linear-Regression-Analysis-in-Python" class="card-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 9 -->
+      <article class="card" data-fig="FIG. 09">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/bawamehar/SAP-ERP-Simulation-Game/main/sap-erp.PNG" alt="SAP ERP Simulation Game">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">ERP · Business Simulation</div>
+          <h3>SAP ERP Simulation Game</h3>
+          <p>A hands-on SAP ERP simulation covering procure-to-pay and order-to-cash
+            business processes in a live enterprise system.</p>
+          <ul class="card-tech">
+            <li>SAP ERP</li><li>Power BI</li><li>Business Process</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/bawamehar/SAP-ERP-Simulation-Game" class="card-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 10 -->
+      <article class="card" data-fig="FIG. 10">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/bawamehar/Fraud-Detection-Analytics-using-Snowflake/main/fraud-detection.png" alt="Fraud Detection Analytics using Snowflake">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">Analytics Engineering · SQL</div>
+          <h3>Fraud Detection Analytics using Snowflake</h3>
+          <p>A CTE-based composite risk scoring model built in Snowflake, framed in
+            feature-engineering terms for fraud pattern detection over transactional data.</p>
+          <ul class="card-tech">
+            <li>Snowflake</li><li>SQL</li><li>Risk Scoring</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/bawamehar/Fraud-Detection-Analytics-using-Snowflake" class="card-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="skills">
+    <div class="section-head">
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-col">
+        <h4>Agentic AI &amp; LLM</h4>
+        <ul>
+          <li>LangGraph / Multi-Agent Systems</li>
+          <li>RAG Pipelines</li>
+          <li>Prompt Engineering</li>
+          <li>OpenAI / Groq APIs</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <h4>ML &amp; Data Science</h4>
+        <ul>
+          <li>PyTorch / HuggingFace</li>
+          <li>Time-Series Forecasting</li>
+          <li>Ensemble Modeling</li>
+          <li>Feature Engineering</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <h4>Cloud &amp; Data Infrastructure</h4>
+        <ul>
+          <li>AWS (Certified Developer Associate)</li>
+          <li>Terraform / CI-CD / ECS</li>
+          <li>Snowflake / PostgreSQL</li>
+          <li>Vector Databases (ChromaDB)</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <h4>Languages &amp; Tools</h4>
+        <ul>
+          <li>Python / SQL</li>
+          <li>Java / Spring Boot</li>
+          <li>FastAPI / MLflow</li>
+          <li>Git / Docker</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="experience">
+    <div class="section-head">
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-role">Graduate Research Assistant</span>
+          <span class="timeline-org">Colorado State University</span>
+        </div>
+        <p>Building multi-agent pipelines, RAG systems, and LLM-based classification tools
+          under faculty research supervision, alongside an M.S. in Computer Information Systems.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-role">Data &amp; Cloud Consultant</span>
+          <span class="timeline-org">Capgemini · 5 years</span>
+        </div>
+        <p>Cloud infrastructure, data engineering, and ITSM for a major Finnish retail and
+          supply chain client. Delivered CI/CD automation, database migrations, and
+          large-scale financial data pipeline improvements.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <h2>Let's build something together?</h2>
+      <p>Open to AI/ML Engineer and Data Scientist roles.</p>
+      <div class="contact-links">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bawamehar@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+        <a href="https://www.linkedin.com/in/bawamehar/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/bawamehar" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="Mehar_Singh_Bawa_AI_Engineer.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>Mehar Singh Bawa — 2026</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
