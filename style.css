@@ -1,26 +1,4 @@
 :root {
-  --bg: #FBF0DE;
-  --bg-panel: #FFFCF6;
-  --bg-panel-2: #F7E1BE;
-  --border: #E9CB9A;
-  --border-soft: #F1DDB6;
-  --text: #33202B;
-  --text-dim: #705A63;
-  --text-faint: #A9907F;
-  --accent: #FF5A47;
-  --accent-2: #FFB627;
-  --accent-soft: #FF5A4733;
-  --nav-bg: rgba(251, 240, 222, 0.88);
-  --grid-opacity: 0.55;
-  --btn-primary-text: #FFF8EE;
-  --eyebrow-color: #B8770A;
-  --font-display: 'Fraunces', serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
-  --max-w: 1120px;
-}
-
-[data-theme="dark"] {
   --bg: #141824;
   --bg-panel: #1A1F2C;
   --bg-panel-2: #1F2534;
@@ -37,6 +15,28 @@
   --btn-primary-text: #191307;
   --eyebrow-color: var(--accent);
   --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --max-w: 1120px;
+}
+
+[data-theme="light"] {
+  --bg: #FBF0DE;
+  --bg-panel: #FFFCF6;
+  --bg-panel-2: #F7E1BE;
+  --border: #E9CB9A;
+  --border-soft: #F1DDB6;
+  --text: #33202B;
+  --text-dim: #705A63;
+  --text-faint: #A9907F;
+  --accent: #FF5A47;
+  --accent-2: #FFB627;
+  --accent-soft: #FF5A4733;
+  --nav-bg: rgba(251, 240, 222, 0.88);
+  --grid-opacity: 0.55;
+  --btn-primary-text: #FFF8EE;
+  --eyebrow-color: #B8770A;
+  --font-display: 'Fraunces', serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -241,17 +241,6 @@ ul { list-style: none; }
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .card:hover { border-color: var(--accent); transform: translateY(-2px); }
-.card::before {
-  content: attr(data-fig);
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  color: var(--text-faint);
-  letter-spacing: 0.06em;
-  z-index: 2;
-}
 .card-media {
   aspect-ratio: 16 / 10;
   background: var(--bg-panel-2);
@@ -433,10 +422,19 @@ ul { list-style: none; }
   padding: 24px;
   max-width: var(--max-w);
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
   font-family: var(--font-mono);
   font-size: 0.72rem;
+  color: var(--text-faint);
+}
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+.footer-quote {
+  font-style: italic;
   color: var(--text-faint);
 }
 
