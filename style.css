@@ -132,6 +132,7 @@ ul { list-style: none; }
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 .icon-pill a, .icon-pill button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,6 +150,69 @@ ul { list-style: none; }
   background: var(--bg-panel-2);
   color: var(--accent);
 }
+
+/* tooltip */
+.icon-pill a[data-tooltip]::after, .icon-pill button[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-4px);
+  background: var(--text);
+  color: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+  padding: 5px 9px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 20;
+}
+.icon-pill a[data-tooltip]:hover::after, .icon-pill a[data-tooltip]:focus-visible::after,
+.icon-pill button[data-tooltip]:hover::after, .icon-pill button[data-tooltip]:focus-visible::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* mobile hamburger + dropdown */
+.mobile-menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-panel);
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  max-width: var(--max-w);
+  margin: 10px auto 0;
+  padding: 10px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.mobile-menu.is-open { display: flex; }
+.mobile-menu a {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  padding: 12px 14px;
+  border-radius: 10px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.mobile-menu a:hover, .mobile-menu a:focus-visible { background: var(--bg-panel-2); color: var(--text); }
 
 /* ============ HERO ============ */
 .hero {
@@ -463,5 +527,6 @@ a:focus-visible, button:focus-visible {
 /* ============ RESPONSIVE ============ */
 @media (max-width: 640px) {
   .nav-pill { display: none; }
+  .mobile-menu-toggle { display: flex; }
   .hero { padding: 90px 20px 60px; }
 }

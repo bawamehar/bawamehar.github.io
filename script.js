@@ -26,10 +26,18 @@ const moonIcon = '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" st
 const applyTheme = (theme) => {
   if (theme === 'light') {
     document.documentElement.setAttribute('data-theme', 'light');
-    if (toggleBtn) { toggleBtn.innerHTML = moonIcon; toggleBtn.setAttribute('aria-label', 'Switch to dark mode'); }
+    if (toggleBtn) {
+      toggleBtn.innerHTML = moonIcon;
+      toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+      toggleBtn.setAttribute('data-tooltip', 'Switch to dark mode');
+    }
   } else {
     document.documentElement.removeAttribute('data-theme');
-    if (toggleBtn) { toggleBtn.innerHTML = sunIcon; toggleBtn.setAttribute('aria-label', 'Switch to light mode'); }
+    if (toggleBtn) {
+      toggleBtn.innerHTML = sunIcon;
+      toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+      toggleBtn.setAttribute('data-tooltip', 'Switch to light mode');
+    }
   }
 };
 
@@ -47,5 +55,22 @@ if (toggleBtn) {
     const next = isLight ? 'dark' : 'light';
     applyTheme(next);
     try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
+  });
+}
+
+// Mobile hamburger menu
+const menuToggle = document.getElementById('mobile-menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('is-open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  mobileMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
   });
 }
